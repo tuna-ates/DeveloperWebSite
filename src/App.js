@@ -1,6 +1,7 @@
 
 import { useContext, useEffect } from 'react';
 import './App.css';
+import { ToastContainer } from 'react-toastify';
 import axios from "axios"
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -12,6 +13,7 @@ import useLocalStorage from './hooks/useLocalStorage';
 import useDocumentSetter from './hooks/useDocumentSetter';
 import { fakeData } from './data/fakeData';
 import useAxios, { REQ_TYPE } from './hooks/useAxios';
+
 
 
 function App() {
@@ -30,13 +32,18 @@ function App() {
   })
      documentSetter();
   },[])
-  return (<>
-    <Header/>
-    <Skills/>
-    <Profile/>
-    <Projects/>
-    <Footer/>
-    </>
+  return (
+    <div>
+       <Header/>
+       <Skills/>
+       <Profile/>
+       <Projects/>
+       <Footer/>
+       <ToastContainer/>
+    </div>
+   
+    
+    
   );
 }
 

@@ -7,6 +7,7 @@ import { DataProvider } from './contexts/DataContexts';
 import i18n from "i18next";
 import {  initReactI18next } from "react-i18next";
 import { resources } from './resources';
+import { ToastContainer, toast } from 'react-toastify';
 const newLang=localStorage.getItem("lang")?localStorage.getItem("lang"):"tr"
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next

@@ -12,6 +12,9 @@ import { useContext } from "react"
 import { DataContext } from "../contexts/DataContexts"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee,faMoon } from '@fortawesome/free-solid-svg-icons'
+import { toast } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Header=()=>{
     const { t,i18n } = useTranslation();
@@ -25,13 +28,14 @@ const Header=()=>{
      const newLang=lang==="tr"?"en":"tr";
      setLang(newLang);
      i18n.changeLanguage(newLang)
-     
+     toast.info("Dil değiştirildi!!",{theme:"colored",autoClose:3000})
    }
 
      const darkMode=()=>{
       const newData= darkData==="light"?"dark":"light"
       setDarkData(newData)
       documentSetter()
+      toast.warn("Tema değiştirildi!!",{theme:"colored"})
      }
     
     return <div className="">
