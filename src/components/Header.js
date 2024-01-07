@@ -43,10 +43,10 @@ const Header = () => {
 
   return (
     <div
-      className={darkData === "dark" ? "darkHeader flex" : "lightHeader flex "}
+      className={darkData === "dark" ? "darkHeader flex" : "lightHeader flex w "}
     >
-      <div className=" flex flex-col items-center justify-start gap-10">
-        <div className=" flex gap-6 justify-between items-center w-[100vw]">
+      <div className=" flex flex-col items-center justify-start gap-10 ">
+        <div className=" flex  justify-between items-center w-[100%]  ">
           <div className="flex items-center justify-around w-[70vw] ">
             <div className=" pt-[2.3125rem] font-inter text-[#CBF281] font-bold  text-2xl leading-[4.5rem]">
               {data.name}
@@ -61,7 +61,7 @@ const Header = () => {
               </span>
             </p>
           </div>
-          <div className="w-[30%] flex gap-3 ">
+          <div className="w-[30%] flex  ">
             {darkData === "light" ? (
               <>
                 {" "}
