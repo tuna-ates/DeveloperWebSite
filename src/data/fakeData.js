@@ -5,6 +5,13 @@ export const fakeData = {
   scholl: "MCBÜ Yazılım Mühendisliği",
   rol: "Frontend,UI",
   headerImg:"images/hero-right12.jpg",
+  profile:{
+    img:"images/image2.jpg",
+    detail1:"Loremipsum, dolor sit amet consectetur adipisicing elit. Veniamaut, odit laborum aliquam voluptatum nisi mollitia.",
+    detail2:"Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
+
+  },
+
   // headerTitle:"Ben bir ön yüz geliştiricyim...",
   // headerDetail:"...mükemmel kullanıcı deneyimlerine sahip, sağlam ve ölçeklenebilir ön uç ürünleri oluşturmayı seven.",
   // skills:"Yetenekler",
