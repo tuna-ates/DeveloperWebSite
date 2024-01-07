@@ -11,7 +11,7 @@ const Projects=()=>{
     return <div className="flex items-center justify-center bg-[#CBF281] dark:bg-[#1A210B]">
       <div className=" flex flex-col justify-center items-start gap-[1.6875rem]  py-[5.25rem] w-[60vw]  ">
          <p className="text-[#4731D3] dark:text-[#CBF281] text-[3rem] max-[768px]:text-[2rem]  font-bold leading-[3rem] max-[768px]:leading-[1.5rem] w-[53vw]  ">{t("projetcs")}</p>
-         <div className="flex items-center justify-center flex-col gap-3 ">  {data.projetcs.map((prj,index)=>{
+         <div className="flex items-center justify-center flex-col gap-3 max-[770px]:pr-6 ">  {data.projetcs.map((prj,index)=>{
           return <Project index={index}/>
          })}</div>
        

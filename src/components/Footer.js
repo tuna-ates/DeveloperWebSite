@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <div className="flex items-center justify-center py-[5.25rem] dark:bg-[#252128]">
       <div className="flex flex-col gap-[1.5rem] items-center">
-        <p className="text-[#4731D3] dark:text-[#8F88FF] text-[3rem] font-bold  leading-[4.5rem]">
+        <p className="text-[#4731D3] dark:text-[#8F88FF] text-[3rem] max-[770px]:text-[2rem] font-bold  leading-[4.5rem]">
         {t("message")}
         </p>
         <p className="text-[#120B39] dark:text-[#FFFFFF] font-[1.5rem] leading-9">{t("footerDetail")}</p>

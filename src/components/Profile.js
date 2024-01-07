@@ -57,7 +57,7 @@ const Profile = () => {
           </div>
           <img className="w-[33%] flex-1 rounded-[12px] max-[770px]:w-[50vw] " src={data.profile.img} />
 
-          <div className="flex justify-start flex-col  gap-3 h-[18.1675rem] w-[33.33%] max-[770px]:w-[50vw]">
+          <div className="flex justify-start flex-col  gap-3 h-[18.1675rem] w-[33.33%] max-[770px]:w-[60vw]">
             <p className="text-white text-[1.875rem]  ">
               {t("about")}
             </p>
