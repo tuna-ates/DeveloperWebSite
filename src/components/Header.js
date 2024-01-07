@@ -48,7 +48,7 @@ const Header = () => {
       <div className=" flex flex-col items-center justify-start gap-10">
         <div className=" flex gap-6 justify-between items-center w-[100vw]">
           <div className="flex items-center justify-around w-[70vw] ">
-            <div className=" pt-[2.3125rem]  font-[Inter] text-[#CBF281] font-bold  text-2xl leading-[4.5rem]">
+            <div className=" pt-[2.3125rem] font-inter text-[#CBF281] font-bold  text-2xl leading-[4.5rem]">
               {data.name}
             </div>
             <p
@@ -61,7 +61,7 @@ const Header = () => {
               </span>
             </p>
           </div>
-          <div className="w-[30%]">
+          <div className="w-[30%] flex gap-3 ">
             {darkData === "light" ? (
               <>
                 {" "}
@@ -87,7 +87,7 @@ const Header = () => {
                     />
                   </svg>
                 </div>{" "}
-                <p className="text-[#8F88FF] font-bold">Dark Mode</p>
+                <p className="text-[#8F88FF] font-bold pr-4">Dark Mode</p>
               </>
             ) : (
               <>
@@ -120,7 +120,10 @@ const Header = () => {
               </button>
             </div>
           </div>
-          <img className=" rounded-md  w-[35%] max-[770px]:w-[70%]" src={data.headerImg}></img>
+          <img
+            className=" rounded-md  w-[35%] max-[770px]:w-[70%]"
+            src={data.headerImg}
+          ></img>
         </div>
       </div>
     </div>
