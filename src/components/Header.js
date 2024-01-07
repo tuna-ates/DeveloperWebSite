@@ -43,7 +43,9 @@ const Header = () => {
 
   return (
     <div
-      className={darkData === "dark" ? "darkHeader flex" : "lightHeader flex w "}
+      className={
+        darkData === "dark" ? "darkHeader flex" : "lightHeader flex w "
+      }
     >
       <div className=" flex flex-col items-center justify-start gap-10 ">
         <div className=" flex  justify-between items-center w-[100%]  ">
@@ -61,7 +63,7 @@ const Header = () => {
               </span>
             </p>
           </div>
-          <div className="w-[30%] flex  ">
+          <div className="w-[30%] flex justify-center ">
             {darkData === "light" ? (
               <>
                 {" "}
@@ -102,8 +104,8 @@ const Header = () => {
             )}
           </div>
         </div>
-        <div className=" pl-5 pb-14 max-[770px]:flex-col  max-[770px]:flex-col-reverse max-[770px]:gap-5  flex justify-start items-center content-center flex-wrap ">
-          <div className="flex flex-col justify-end items-start max-[770px]:items-center gap-9 w-[57%]">
+        <div className="  pb-14 max-[770px]:flex-col  max-[770px]:flex-col-reverse max-[770px]:gap-5  flex justify-end items-center content-center flex-wrap ">
+          <div className="  flex flex-col justify-end items-start max-[770px]:items-center gap-9 w-[57%]">
             <p className=" w-[90%] text-[#CBF281] font-[Inter] font-bold leading-[3.7125rem] text-[3.375rem] max-[640px]:text-[2.3rem] max-[770px]:text-white ">
               {t("headerTitle")}
             </p>
