@@ -1,12 +1,20 @@
-import img1 from "../icons/Rectangle41.jpg"
-import img2 from "../icons/Rectangle31.jpg"
+
 import { useTranslation } from "react-i18next"
+import { useContext } from "react"
+import { DataContext } from "../contexts/DataContexts"
+import Project from "./Project"
 const Projects=()=>{
+  const {data}=useContext(DataContext)
   const {t}=useTranslation();
+  
+  
     return <div className="flex items-center justify-center bg-[#CBF281] dark:bg-[#1A210B]">
       <div className=" flex flex-col gap-[1.6875rem]  pb-[5.25rem] ">
          <p className="text-[#4731D3] dark:text-[#CBF281] text-[3rem] max-[768px]:text-[2rem] mt-[5.25rem] max-[768px]:mt-[3rem] font-bold leading-[3rem] max-[768px]:leading-[1.5rem] tracking-[0.48px]">{t("projetcs")}</p>
-         <div className="flex bg-[#FFF] dark:bg-[#2B2727] rounded-xl items-center justify-center gap-[1rem] w-[60rem] max-[768px]:w-[35rem] ">
+         {data.projetcs.map((prj,index)=>{
+          return <Project index={index}/>
+         })}
+         {/* <div className="flex bg-[#FFF] dark:bg-[#2B2727] rounded-xl items-center justify-center gap-[1rem] w-[60rem] max-[768px]:w-[35rem] ">
               <img className=" max-[763px]:w-[15rem]  " src={img1}></img>
               <div className="flex flex-col gap-[1.5rem] px-8 items-start ">
 
@@ -23,9 +31,9 @@ const Projects=()=>{
                 </div>
               </div>
 
-         </div>
+         </div> */}
 
-         <div className="flex bg-[#FFF] dark:bg-[#2B2727] rounded-xl items-center justify-center gap-[1rem] w-[60rem] max-[768px]:w-[35rem]">
+         {/* <div className="flex bg-[#FFF] dark:bg-[#2B2727] rounded-xl items-center justify-center gap-[1rem] w-[60rem] max-[768px]:w-[35rem]">
               <img className="max-[763px]:w-[15rem] " src={img2}></img>
               <div className="flex flex-col gap-[1.5rem] px-8 items-start ">
 
@@ -42,7 +50,7 @@ const Projects=()=>{
                 </div>
               </div>
 
-         </div>
+         </div> */}
     </div>
     </div>
    

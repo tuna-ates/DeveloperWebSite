@@ -4,23 +4,33 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { DataProvider } from './contexts/DataContexts';
+import { initReactI18next } from "react-i18next";
 import i18n from "i18next";
-import {  initReactI18next } from "react-i18next";
-import { resources } from './resources';
-import { ToastContainer, toast } from 'react-toastify';
-const newLang=localStorage.getItem("lang")?localStorage.getItem("lang"):"tr"
-i18n
-  .use(initReactI18next) // passes i18n down to react-i18next
-  .init({
-    resources:resources,
-    lng: newLang, // if you're using a language detector, do not define the lng option
-    fallbackLng: "en",
+import { fakeData } from './data/fakeData';
 
-    interpolation: {
-      escapeValue: false // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
-    }
-  });
+
+const newLang = localStorage.getItem("lang")
+? localStorage.getItem("lang")
+: "tr";
+
+const resources= {
+  tr: fakeData.leangue.tr,
+  en: fakeData.leangue.en
+}
+
+i18n
+.use(initReactI18next) // passes i18n down to react-i18next
+.init({
+  resources:resources,
+  lng: newLang, // if you're using a language detector, do not define the lng option
+  fallbackLng: "en",
+
+  interpolation: {
+    escapeValue: false, // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
+  },
+});
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <DataProvider>
     <React.StrictMode>

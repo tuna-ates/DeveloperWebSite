@@ -1,6 +1,4 @@
 import { useTranslation } from "react-i18next"
-import jsLogo from "../icons/js.png"
-import reactLogo from "../icons/react.png"
 import reduxLogo from "../icons/redux1.png"
 const Skills=()=>{
   const {t}=useTranslation();
