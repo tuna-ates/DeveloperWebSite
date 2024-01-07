@@ -102,25 +102,25 @@ const Header = () => {
             )}
           </div>
         </div>
-        <div className=" pl-5 pb-14  flex justify-start items-center content-center flex-wrap ">
-          <div className="flex flex-col justify-end items-start gap-9 w-[57%]">
-            <p className=" text-[#CBF281] font-[Inter] font-bold leading-[3.7125rem] text-[3.375rem] max-[640px]:text-[2.3rem] ">
+        <div className=" pl-5 pb-14 max-[770px]:flex-col  max-[770px]:flex-col-reverse max-[770px]:gap-5  flex justify-start items-center content-center flex-wrap ">
+          <div className="flex flex-col justify-end items-start max-[770px]:items-center gap-9 w-[57%]">
+            <p className=" w-[90%] text-[#CBF281] font-[Inter] font-bold leading-[3.7125rem] text-[3.375rem] max-[640px]:text-[2.3rem] ">
               {t("headerTitle")}
             </p>
             <p className="text-[#FFFFFF] font-[Inter] text-[1.5rem] ">
               {t("headerDetail")}
             </p>
             <div className=" flex items-center gap-3">
-              <button className=" font-[Inter] text-lg text-[#3730A3] dark:text-white   flex items-center justify-center bg-white dark:bg-[#252128] pt-3 pr-5 pb-3 pl-3 gap-[10px] rounded-md border-[1px] border-solid border-[#3730A3] dark:border-white">
+              <button className=" font-[Inter] text-lg text-[#3730A3] dark:text-white   flex items-center justify-center bg-white dark:bg-[#252128] pt-3 pr-5 pb-3 pl-3 gap-[10px] rounded-md border-[1px] border-solid border-[#3730A3] dark:border-white max-[770px]:w-[50%]">
                 <img src={darkData === "light" ? github : github2}></img>Github
               </button>
-              <button className=" font-[Inter] text-lg text-[#3730A3] dark:text-white flex items-center justify-center bg-white dark:bg-[#252128] pt-3 pr-5 pb-3 pl-3 gap-[10px] rounded-md border-[1px] border-solid border-[#3730A3] dark:border-white">
+              <button className=" font-[Inter] text-lg text-[#3730A3] dark:text-white flex items-center justify-center bg-white dark:bg-[#252128] pt-3 pr-5 pb-3 pl-3 gap-[10px] rounded-md border-[1px] border-solid border-[#3730A3] dark:border-white max-[770px]-w-[30%]">
                 <img src={darkData === "light" ? linkedin : linkedin2}></img>
                 Linkedin
               </button>
             </div>
           </div>
-          <img className=" rounded-md  w-[35%]" src={data.headerImg}></img>
+          <img className=" rounded-md  w-[35%] max-[770px]:w-[70%]" src={data.headerImg}></img>
         </div>
       </div>
     </div>

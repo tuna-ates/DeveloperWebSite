@@ -9,7 +9,6 @@ export const fakeData = {
     img:"images/image2.jpg",
     detail1:"Loremipsum, dolor sit amet consectetur adipisicing elit. Veniamaut, odit laborum aliquam voluptatum nisi mollitia.",
     detail2:"Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
-
   },
 
   // headerTitle:"Ben bir ön yüz geliştiricyim...",

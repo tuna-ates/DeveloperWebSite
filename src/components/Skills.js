@@ -4,7 +4,7 @@ const Skills = () => {
   const { t } = useTranslation();
   return (
     <div className=" flex items-center justify-center py-[5.25rem] dark:bg-[#252128]">
-      <div className="flex justify-around max-[700px]:flex-col  flex-wrap items-start w-[100vw]">
+      <div className="flex justify-around max-[700px]:flex-col max-[700px]:pl-5  flex-wrap items-start w-[100vw]">
         <p className="text-[#4832D3] dark:text-[#CBF281] font-[Inter] text-[3rem]   font-bold">
           {t("skills")}
         </p>
