@@ -113,13 +113,19 @@ const Header = () => {
               {t("headerDetail")}
             </p>
             <div className=" flex items-center gap-3">
-              <button className=" font-[Inter] text-lg text-[#3730A3] dark:text-white   flex items-center justify-center bg-white dark:bg-[#252128] pt-3 pr-5 pb-3 pl-3 gap-[10px] rounded-md border-[1px] border-solid border-[#3730A3] dark:border-white max-[770px]:w-[50%]">
+              <a
+                href="https://github.com/tuna-ates"
+                className=" font-[Inter] text-lg text-[#3730A3] dark:text-white   flex items-center justify-center bg-white dark:bg-[#252128] pt-3 pr-5 pb-3 pl-3 gap-[10px] rounded-md border-[1px] border-solid border-[#3730A3] dark:border-white max-[770px]:w-[50%]"
+              >
                 <img src={darkData === "light" ? github : github2}></img>Github
-              </button>
-              <button className=" font-[Inter] text-lg text-[#3730A3] dark:text-white flex items-center justify-center bg-white dark:bg-[#252128] pt-3 pr-5 pb-3 pl-3 gap-[10px] rounded-md border-[1px] border-solid border-[#3730A3] dark:border-white max-[770px]-w-[30%]">
+              </a>
+              <a
+                href="https://www.linkedin.com/in/tuna-ats/"
+                className=" font-[Inter] text-lg text-[#3730A3] dark:text-white flex items-center justify-center bg-white dark:bg-[#252128] pt-3 pr-5 pb-3 pl-3 gap-[10px] rounded-md border-[1px] border-solid border-[#3730A3] dark:border-white max-[770px]-w-[30%]"
+              >
                 <img src={darkData === "light" ? linkedin : linkedin2}></img>
                 Linkedin
-              </button>
+              </a>
             </div>
           </div>
           <img
